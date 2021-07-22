@@ -5,6 +5,9 @@
   margin: 0;
 
   & li:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 3.125vw;
+
+    @media screen and (max-width: 767px) {
+    }
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
+import Anchor from '../../../UI/Anchor/Anchor';
+import classes from './SocialItem.module.scss';
 
-function SocialItem({ name, icon, href }) {
+function SocialItem({ title, Icon, href }) {
   return (
-    <li>
-      <a href={href} title={name}>
-        {icon}
-      </a>
+    <li className={classes.SocialItem}>
+      <Anchor href={href} title={title} Icon={Icon} />
     </li>
   );
 }

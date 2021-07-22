@@ -5,7 +5,9 @@ import SocialList from './SocialList/SocialList';
 function Header() {
   return (
     <header className={classes.Header}>
-      <div>Logo</div>
+      <span className={classes.HeaderLogo}>
+        <strong>Oleg</strong>Kireev
+      </span>
       <SocialList />
     </header>
   );

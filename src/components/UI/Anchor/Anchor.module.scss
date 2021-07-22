@@ -1,0 +1,21 @@
+.Anchor {
+  color: #333333;
+  transition: 0.1s ease-in;
+
+  &:hover,
+  &:focus-visible,
+  &:hover svg,
+  &:focus-visible svg {
+    color: #6610f2;
+  }
+
+  &:active,
+  &:active svg {
+    color: darken($color: #6610f2, $amount: 10%);
+  }
+
+  & svg {
+    color: #333333;
+    transition: 0.1s ease-in;
+  }
+}

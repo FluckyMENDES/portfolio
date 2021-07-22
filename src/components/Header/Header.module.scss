@@ -1,10 +1,20 @@
 .Header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 20px 10px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: paleturquoise;
+  background-color: #161616;
+  color: #fefefe;
+}
+
+.HeaderLogo {
+  font-size: 3.2em;
+
+  @media screen and (max-width: 575px) {
+    font-size: 2.4em;
+  }
 }
