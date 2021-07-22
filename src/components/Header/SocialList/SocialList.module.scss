@@ -1,0 +1,10 @@
+.SocialList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & li:not(:last-child) {
+    margin-right: 60px;
+  }
+}
