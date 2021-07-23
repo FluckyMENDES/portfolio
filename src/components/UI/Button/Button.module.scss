@@ -1,0 +1,90 @@
+@import './../../../assets/scss/variables';
+
+.Button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: $color-gray-500;
+  color: $color-white;
+  border: none;
+  border-radius: 1.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.15s background-color ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: darken($color: $color-gray-500, $amount: 5%);
+  }
+
+  &:active {
+    background-color: darken($color: $color-gray-500, $amount: 10%);
+  }
+
+  &.dark {
+    background-color: $color-gray-800;
+
+    &:hover,
+    &:focus-visible {
+      background-color: lighten($color: $color-gray-800, $amount: 5%);
+    }
+
+    &:active {
+      background-color: lighten($color: $color-gray-800, $amount: 10%);
+    }
+  }
+
+  &.success {
+    background-color: $color-green;
+
+    &:hover,
+    &:focus-visible {
+      background-color: lighten($color: $color-green, $amount: 7%);
+    }
+
+    &:active {
+      background-color: lighten($color: $color-green, $amount: 14%);
+    }
+  }
+
+  &.warning {
+    background-color: $color-yellow;
+    color: $color-black;
+    font-weight: 700;
+
+    &:hover,
+    &:focus-visible {
+      background-color: darken($color: $color-yellow, $amount: 10%);
+    }
+
+    &:active {
+      background-color: darken($color: $color-yellow, $amount: 20%);
+    }
+  }
+
+  &.error {
+    background-color: $color-red;
+
+    &:hover,
+    &:focus-visible {
+      background-color: darken($color: $color-red, $amount: 10%);
+    }
+
+    &:active {
+      background-color: darken($color: $color-red, $amount: 20%);
+    }
+  }
+
+  &.info {
+    background: $color-cyan;
+    color: $color-black;
+
+    &:hover,
+    &:focus-visible {
+      background-color: darken($color: $color-cyan, $amount: 7%);
+    }
+
+    &:active {
+      background-color: darken($color: $color-cyan, $amount: 14%);
+    }
+  }
+}

@@ -1,13 +1,15 @@
+@import './../../../assets/scss/variables';
+
 .Anchor {
-  $active_color: var(--color-indigo);
-  color: var(--color-dark-gray);
+  $active_color: $color-indigo;
+  color: $color-gray-800;
   transition: 0.1s ease-in;
 
   &:hover,
   &:focus-visible,
   &:hover svg,
   &:focus-visible svg {
-    color: var(--color-indigo);
+    color: $color-indigo;
   }
 
   &:active,
@@ -16,7 +18,7 @@
   }
 
   & svg {
-    color: var(--color-dark-gray);
+    color: $color-gray-800;
     transition: 0.1s ease-in;
   }
 }

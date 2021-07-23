@@ -1,10 +1,10 @@
 import React from 'react';
-import Title from './../../components/Title/Title';
+import Hero from '../../components/Hero/Hero';
 
 function Homepage() {
   return (
     <div className="container">
-      <Title level={1}>Homepage</Title>
+      <Hero />
     </div>
   );
 }

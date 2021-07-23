@@ -7,7 +7,7 @@ function Header({ setContentTopOffset }) {
 
   useEffect(() => {
     setContentTopOffset(headerEl.current.getBoundingClientRect().height);
-  }, []);
+  }, [setContentTopOffset]);
 
   return (
     <header className={classes.Header} ref={headerEl}>

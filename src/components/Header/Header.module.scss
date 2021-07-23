@@ -1,3 +1,5 @@
+@import './../../assets/scss/variables';
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -7,14 +9,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #161616;
-  color: #fefefe;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 .HeaderLogo {
-  font-size: 3.2em;
+  font-size: 3.2rem;
 
   @media screen and (max-width: 575px) {
-    font-size: 2.4em;
+    font-size: 2.4rem;
   }
 }
