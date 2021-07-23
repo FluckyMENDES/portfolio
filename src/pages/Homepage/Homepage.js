@@ -1,13 +1,11 @@
 import React from 'react';
 import Title from './../../components/Title/Title';
 
-function Homepage({ contentTopOffset }) {
+function Homepage() {
   return (
-    <main style={{ paddingTop: contentTopOffset }}>
-      <div className="container">
-        <Title level={1}>Homepage</Title>
-      </div>
-    </main>
+    <div className="container">
+      <Title level={1}>Homepage</Title>
+    </div>
   );
 }
 

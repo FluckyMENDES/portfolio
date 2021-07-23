@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <Layout setContentTopOffset={setContentTopOffset}>
-        <Homepage contentTopOffset={contentTopOffset} />
+      <Layout contentTopOffset={contentTopOffset} setContentTopOffset={setContentTopOffset}>
+        <Homepage />
       </Layout>
     </div>
   );
