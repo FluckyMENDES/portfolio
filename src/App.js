@@ -1,13 +1,17 @@
-import Layout from './hoc/Layout/Layout';
+import React, { useState } from 'react';
 import 'normalize.css';
 import './App.css';
-import Title from './components/Title/Title';
+import Homepage from './pages/Homepage/Homepage';
+import Layout from './hoc/Layout/Layout';
 
 function App() {
+  const [contentTopOffset, setContentTopOffset] = useState(0);
+
   return (
     <div className="App">
-      <Title level={1}>App</Title>
-      <Layout />
+      <Layout setContentTopOffset={setContentTopOffset}>
+        <Homepage contentTopOffset={contentTopOffset} />
+      </Layout>
     </div>
   );
 }

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classes from './Header.module.scss';
 import SocialList from './SocialList/SocialList';
 
-function Header() {
+function Header({ setContentTopOffset }) {
+  const headerEl = useRef(null);
+
+  useEffect(() => {
+    setContentTopOffset(headerEl.current.getBoundingClientRect().height);
+  }, []);
+
   return (
-    <header className={classes.Header}>
+    <header className={classes.Header} ref={headerEl}>
       <span className={classes.HeaderLogo}>
         <strong>Oleg</strong>Kireev
       </span>

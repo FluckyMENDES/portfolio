@@ -1,12 +1,13 @@
 .Anchor {
-  color: #333333;
+  $active_color: var(--color-indigo);
+  color: var(--color-dark-gray);
   transition: 0.1s ease-in;
 
   &:hover,
   &:focus-visible,
   &:hover svg,
   &:focus-visible svg {
-    color: #6610f2;
+    color: var(--color-indigo);
   }
 
   &:active,
@@ -15,7 +16,7 @@
   }
 
   & svg {
-    color: #333333;
+    color: var(--color-dark-gray);
     transition: 0.1s ease-in;
   }
 }
