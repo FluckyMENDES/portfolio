@@ -1,17 +1,21 @@
 @import './../../assets/scss/variables';
 
 .Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px 10px;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
   background-color: $color-black;
   color: $color-white;
+
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+  }
 }
 
 .HeaderLogo {

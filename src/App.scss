@@ -48,10 +48,22 @@ body {
   font-size: 10px;
   background-color: $color-black;
   color: $color-white;
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .container {

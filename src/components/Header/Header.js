@@ -9,13 +9,16 @@ function Header({ setContentTopOffset }) {
     setContentTopOffset(headerEl.current.getBoundingClientRect().height);
   }, [setContentTopOffset]);
 
-  const cls = [classes.Header, 'container'];
+  const cls = [classes.HeaderContainer, 'container'];
+
   return (
-    <header className={cls.join(' ')} ref={headerEl}>
-      <span className={classes.HeaderLogo}>
-        <strong>Oleg</strong>Kireev
-      </span>
-      <SocialList />
+    <header className={classes.Header} ref={headerEl}>
+      <div className={cls.join(' ')}>
+        <span className={classes.HeaderLogo}>
+          <strong>Oleg</strong>Kireev
+        </span>
+        <SocialList />
+      </div>
     </header>
   );
 }
