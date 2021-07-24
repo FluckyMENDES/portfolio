@@ -9,8 +9,9 @@ function Header({ setContentTopOffset }) {
     setContentTopOffset(headerEl.current.getBoundingClientRect().height);
   }, [setContentTopOffset]);
 
+  const cls = [classes.Header, 'container'];
   return (
-    <header className={classes.Header} ref={headerEl}>
+    <header className={cls.join(' ')} ref={headerEl}>
       <span className={classes.HeaderLogo}>
         <strong>Oleg</strong>Kireev
       </span>
