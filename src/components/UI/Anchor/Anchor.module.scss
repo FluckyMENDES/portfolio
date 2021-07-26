@@ -21,4 +21,18 @@
     color: $color-gray-800;
     transition: 0.1s ease-in;
   }
+
+  &.colored {
+    color: $color-indigo;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: darken($color: #6610f2, $amount: 10%);
+    }
+  }
 }

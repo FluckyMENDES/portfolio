@@ -1,0 +1,9 @@
+.CallToAction {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  & p {
+    text-align: center;
+    font-size: calc(2.4rem + (60 - 24) * (100vw - 320px) / (1920 - 320));
+  }
+}

@@ -5,7 +5,9 @@ import classes from './SocialItem.module.scss';
 function SocialItem({ title, Icon, href }) {
   return (
     <li className={classes.SocialItem}>
-      <Anchor href={href} title={title} Icon={Icon} />
+      <Anchor href={href} title={title}>
+        <Icon fill="currentColor" />
+      </Anchor>
     </li>
   );
 }
