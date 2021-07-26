@@ -3,7 +3,6 @@ import classes from './CallToAction.module.scss';
 import Anchor from './../UI/Anchor/Anchor';
 
 function CallToAction() {
-  console.log(Anchor);
   return (
     <div className={classes.CallToAction}>
       <p>

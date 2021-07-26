@@ -1,0 +1,14 @@
+@import './../../assets/scss/variables';
+
+.Footer {
+  & span {
+    display: block;
+    text-align: center;
+    color: $color-gray-800;
+    font-size: calc(1.6rem + (24 - 16) * (100vw - 320px) / (1920 - 320));
+  }
+}
+
+.test {
+  color: red;
+}
