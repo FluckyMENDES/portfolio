@@ -27,7 +27,7 @@ const works = [
     name: 'U-Fly',
     type: 'Интернет-каталог',
     desc: 'Сайт аренды дронов/квадрокоптеров.',
-    link: 'http://u-fly.ru/',
+    link: 'https://u-fly.ru/',
     img: work3Img,
     video: '',
   },

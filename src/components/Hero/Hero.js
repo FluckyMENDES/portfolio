@@ -11,7 +11,7 @@ function Hero() {
         <Title className={classes.title} level={1}>
           Привет, я <strong>веб-разработчик</strong> Олег.
         </Title>
-        <Button type="dark">Связаться со мной</Button>
+        <Button href="https://tlgg.ru/FluckyMENDES">Связаться со мной</Button>
       </div>
       <img className={classes.img} src={heroImg} alt="Я смотрю в новый совместный проект" />
     </section>
